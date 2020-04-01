@@ -1,13 +1,18 @@
 {
   "private": true,
+  "scripts": {
+    "build:cjs": "babel --config-file ./cjs.babelrc -d lib/cjs src",
+    "build:esm": "babel --config-file ./esm.babelrc -d lib/esm src",
+    "build": "npm run build:cjs && npm run build:esm"
+  },
   "dependencies": {
     "@babel/runtime": "^7.9.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.0",
     "@babel/plugin-transform-modules-commonjs": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
     "babel-plugin-add-import-extension": "^1.3.1"
   }
 }
