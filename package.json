@@ -1,5 +1,6 @@
 {
   "name": "simple-babel-package-example",
+  "version": "0.0.0",
   "description": "A simple repository that uses BabelJS to create CommonJS module and ES module",
   "type": "module",
   "main": "./lib/cjs/index.js",
