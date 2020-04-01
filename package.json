@@ -1,5 +1,13 @@
 {
   "private": true,
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/cjs/index.js",
+  "exports": {
+    ".": {
+      "import": "./lib/esm/index.js",
+      "require": "./lib/cjs/index.js"
+    }
+  },
   "scripts": {
     "build:cjs": "babel --config-file ./cjs.babelrc -d lib/cjs src",
     "build:esm": "babel --config-file ./esm.babelrc -d lib/esm src",
