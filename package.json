@@ -1,5 +1,6 @@
 {
-  "private": true,
+  "name": "simple-babel-package-example",
+  "description": "A simple repository that uses BabelJS to create CommonJS module and ES module",
   "type": "module",
   "main": "./lib/cjs/index.js",
   "module": "./lib/cjs/index.js",
